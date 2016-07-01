@@ -3,33 +3,40 @@ body{
 	position: relative;
 }
 
+h1{
+	text-align: center;
+	text-decoration: underline;
+	font-size: 3em;
+	font-weight: 700;
+}
+
 h2{
 	text-align: center;
 	text-decoration: underline;
 }
 
 .container{
-	width: 100%;
-	height: 50vh;
+	width: 80%;
+	height: 50%;
+	margin: auto;
+	text-align: center;
 }
 
 .gallery{
 	width: 60%;
-	margin-left: 20%;
 	display: inline-block;
-	height: 20%;
 }
 
 button{
 	display: inline-block;
 	width: 5%;
+	vertical-align: middle;
 }
 
 .card {
 	border: 1em solid #060605;
 	border-radius: 1em;
 	margin-bottom: 3%;
-	width: 90%;
 }
 
 .large, .content{

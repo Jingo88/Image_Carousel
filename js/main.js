@@ -1,5 +1,5 @@
 $(document).ready(function(){	
-	// $('body').css({height: $(window).innerHeight()})
+	$('body').css({height: $(window).innerHeight()})
 
 	for (var i = 0; i<charNum; ++i){
 		var card = $('<div class="card">');
