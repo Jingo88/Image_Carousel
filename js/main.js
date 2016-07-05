@@ -20,6 +20,7 @@ $(document).ready(function(){
 	}
 
 	$('.card#' + counter).show();
+
 });
 
 var characters = Object.keys(marvel)

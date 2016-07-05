@@ -1,6 +1,9 @@
 body{
 	font-family: 'MedievalSharp', cursive;
 	position: relative;
+	background-color: #0F1A20;
+	margin-top: 5%;
+	color: #F42C04;
 }
 
 h1{
@@ -16,27 +19,56 @@ h2{
 }
 
 .container{
+	position: relative;
 	width: 80%;
-	height: 50%;
+	height: 70%;
 	margin: auto;
 	text-align: center;
 }
 
 .gallery{
+	height: 100%;
 	width: 60%;
 	display: inline-block;
 }
 
-button{
+.scroll{
+	position: relative;
 	display: inline-block;
 	width: 5%;
-	vertical-align: middle;
+	height: 100%;
+	text-align: center;
+}
+
+button{
+	position: absolute;
+	width: 100%;
+	bottom: 50%;
+	left: 0;
+	background: #A02D00;
+  background-image: -webkit-linear-gradient(top, #A02D00, #C43700);
+  background-image: -moz-linear-gradient(top, #A02D00, #C43700);
+  background-image: -ms-linear-gradient(top, #A02D00, #C43700);
+  background-image: -o-linear-gradient(top, #A02D00, #C43700);
+  background-image: linear-gradient(to bottom, #A02D00, #C43700);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 2em;
+  color: #0F1A20;
+  font-size: 1.2em;
+  padding: .5em .7em .5em .7em;
+  outline: 0;
+}
+
+button:hover {
+  background: #ED4300;
+  text-decoration: none;
 }
 
 .card {
-	border: 1em solid #060605;
+	height: 100%;
+	border: 1em solid #A02D00;
 	border-radius: 1em;
-	margin-bottom: 3%;
 }
 
 .large, .content{
@@ -44,11 +76,12 @@ button{
 }
 
 .large{
-	width: 40%;
+	height: 100%;
+	width: 45%;
 }
 .content{
 	vertical-align: top;
-	width: 50%;
+	width: 45%;
 	margin-left: 5%;
 	margin-right: 5%;
 }
@@ -56,5 +89,8 @@ button{
 img{
 	width: 100%;
 	height: 100%;
+	cursor: -webkit-zoom-in;
+	cursor: -moz-zoom-in;
+	cursor: zoom-in;
 }
 
