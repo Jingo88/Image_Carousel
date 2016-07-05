@@ -1,6 +1,5 @@
 $(document).ready(function(){	
 	$('body').css({height: $(window).innerHeight()})
-
 	for (var i = 0; i<charNum; ++i){
 		var card = $('<div class="card">');
 		var large = $('<div class="large">');
@@ -21,14 +20,22 @@ $(document).ready(function(){
 
 	$('.card#' + counter).show();
 
+	$('img').on('click', function(){
+		console.log(this.src)
+		$('#modal>div>img').attr("src", this.src)
+		$('#modal').toggle();
+	})
+
 });
 
 var characters = Object.keys(marvel)
-var charNum = characters.length-1
+var charNum = characters.length
 var counter = 0
 
+console.log(charNum)
+
 $('.right').click(function(){
-	if (counter < charNum){
+	if (counter < charNum-1){
 		$('.card#'+counter).hide();
 		counter++
 		$('.card#' + counter).show();
