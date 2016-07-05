@@ -41,6 +41,7 @@ h2{
 }
 
 button{
+	text-align: center;
 	position: absolute;
 	width: 100%;
 	bottom: 50%;
@@ -56,7 +57,7 @@ button{
   border-radius: 2em;
   color: #0F1A20;
   font-size: 1.2em;
-  padding: .5em .7em .5em .7em;
+  /*padding: .5em .7em .5em .7em;*/
   outline: 0;
 }
 
@@ -84,6 +85,13 @@ button:hover {
 	width: 45%;
 	margin-left: 5%;
 	margin-right: 5%;
+	height: 100%;
+}
+
+.description{
+	position: relative;
+	overflow: scroll;
+	height: 80%;
 }
 
 img{
@@ -102,7 +110,7 @@ img{
   display: none;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, .4);
+  background-color: rgba(0, 0, 0, .6);
 }
 
 .modal-body {
