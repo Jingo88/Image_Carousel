@@ -32,8 +32,6 @@ var characters = Object.keys(marvel)
 var charNum = characters.length
 var counter = 0
 
-console.log(charNum)
-
 $('.right').click(function(){
 	if (counter < charNum-1){
 		$('.card#'+counter).hide();
