@@ -42,9 +42,7 @@ h2{
 
 button{
 	text-align: center;
-	position: absolute;
 	width: 100%;
-	bottom: 50%;
 	left: 0;
 	background: #A02D00;
   background-image: -webkit-linear-gradient(top, #A02D00, #C43700);
@@ -59,6 +57,12 @@ button{
   font-size: 1.2em;
   /*padding: .5em .7em .5em .7em;*/
   outline: 0;
+}
+
+.btnWrap{
+	position: absolute;
+	width: 100%;
+	bottom: 50%;
 }
 
 button:hover {

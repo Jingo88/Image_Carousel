@@ -8,20 +8,28 @@
 </head>
 <body>
 
+
+
 <h1>Medieval Marvel Universe</h1>
 
 <div class="container">
 
-	<div class='scroll left'>
-		<button><<</button>
+	<div class='scroll'>
+		<div class='btnWrap'>
+			<button class='left'><<</button>
+			<button class="first">First</button>	
+		</div>
 	</div>
 
 	<div class="gallery">
 
 	</div>
 
-	<div class='scroll right'>
-		<button>>></button>
+	<div class='scroll'>
+		<div class='btnWrap'>
+			<button class='right'>>></button>
+			<button class="last">Last</button>	
+		</div>	
 	</div>
 
 <div>	
@@ -31,6 +39,8 @@
     <img id="expand">
   </div>
 </div>
+
+<h3 class="photoNum"></h3>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 	<script src="js/data.js"></script>

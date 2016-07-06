@@ -24,7 +24,9 @@ $(document).ready(function(){
 		console.log(this.src)
 		$('#modal>div>img').attr("src", this.src)
 		$('#modal').toggle();
-	})
+	});
+
+	setImageNum(counter+1, charNum);
 
 });
 
@@ -33,17 +35,54 @@ var charNum = characters.length
 var counter = 0
 
 $('.right').click(function(){
+	moveRight();
+});
+
+$('.left').click(function(){
+	moveLeft();
+});
+
+$('.first').click(function(){
+	endImage(0);
+});
+
+$('.last').click(function(){
+	endImage(charNum-1);
+})
+
+$('body').keydown(function(e){
+	if (e.keyCode === 39 || e.keyCode === 68){
+		moveRight()
+	} else if (e.keyCode === 37 || e.keyCode === 65){
+		moveLeft()
+	}
+})
+
+var setImageNum = function(curr, max){
+	$('.photoNum').html(curr + " of " + max);
+};
+
+var moveRight = function(){
 	if (counter < charNum-1){
 		$('.card#'+counter).hide();
 		counter++
 		$('.card#' + counter).show();
 	}
-});
+	setImageNum(counter+1, charNum);
+};
 
-$('.left').click(function(){
+var moveLeft = function(){
 	if (counter > 0 ){
 		$('.card#'+counter).hide();
 		counter--
 		$('.card#' + counter).show();
 	}
-});
+	setImageNum(counter+1, charNum);
+};
+
+var endImage = function(endNum){
+		$('.card#'+counter).hide();
+		counter = endNum
+		$('.card#' + counter).show();
+	setImageNum(counter+1, charNum);
+};
